@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSRX Canvas — Support</title>
+  <meta name="description" content="Support and FAQ for MSRX Canvas, the premium macOS screenshot annotation and image markup app.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #ffffff; --surface: #f5f5f7; --border: rgba(0,0,0,0.06); --text: #1d1d1f; --text2: #6e6e73; --text3: #a1a1a6; --gradient: linear-gradient(135deg, #00c4df 0%, #8b5cf6 100%); }
+    body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; line-height: 1.7; }
+    nav { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.88); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 800px; margin: 0 auto; padding: 0 24px; height: 56px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+    .nav-logo svg { width: 22px; height: 27px; }
+    .nav-logo span { font-size: 15px; font-weight: 700; color: var(--text); }
+    .nav-app { font-size: 13px; color: var(--text3); }
+    main { max-width: 800px; margin: 0 auto; padding: 56px 24px 80px; }
+    .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text3); margin-bottom: 12px; }
+    h1 { font-size: 36px; font-weight: 800; letter-spacing: -0.02em; color: var(--text); margin-bottom: 8px; }
+    h1 span { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .subtitle { font-size: 16px; color: var(--text2); margin-bottom: 40px; }
+    .faq { display: flex; flex-direction: column; gap: 10px; }
+    details { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 0 20px; transition: border-color 0.15s; }
+    details[open] { border-color: rgba(139,92,246,0.35); }
+    summary { font-size: 15px; font-weight: 600; color: var(--text); padding: 18px 0; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--text3); font-size: 20px; font-weight: 400; transition: transform 0.15s; }
+    details[open] summary::after { transform: rotate(45deg); color: #8b5cf6; }
+    details p { font-size: 14px; color: var(--text2); padding: 0 0 18px; margin: 0; }
+    details p a { color: #8b5cf6; text-decoration: none; }
+    .contact-box { background: var(--gradient); border-radius: 20px; padding: 36px; text-align: center; margin-top: 44px; }
+    .contact-box h3 { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .contact-box p { font-size: 14px; color: rgba(255,255,255,0.9); margin-bottom: 20px; }
+    .email-btn { display: inline-block; background: #fff; color: #1d1d1f; padding: 12px 30px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 15px; transition: opacity 0.15s; }
+    .email-btn:hover { opacity: 0.9; }
+    .contact-note { margin-top: 14px; font-size: 12px; color: rgba(255,255,255,0.8); }
+    footer { max-width: 800px; margin: 0 auto; padding: 24px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    footer span, footer a { font-size: 13px; color: var(--text3); text-decoration: none; }
+    footer a:hover { color: var(--text2); }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="https://msrx.co.in" class="nav-logo">
+        <svg viewBox="0 0 100 120" fill="none"><defs><linearGradient id="g" x1="0" y1="0" x2="100" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#00c4df"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><path d="M6 110 L6 12 L50 62 L94 12 L94 110 L76 110 L76 46 L50 80 L24 46 L24 110 Z" fill="url(#g)"/></svg>
+        <span>MSRX</span>
+      </a>
+      <span class="nav-app">MSRX Canvas · Support</span>
+    </div>
+  </nav>
+  <main>
+    <p class="eyebrow">Help Center</p>
+    <h1>Support &amp; <span>FAQ</span></h1>
+    <p class="subtitle">Answers to common questions about MSRX Canvas. Still stuck? Email us — we reply fast.</p>
+
+    <div class="faq">
+      <details open>
+        <summary>What is MSRX Canvas?</summary>
+        <p>A premium native macOS app to capture, annotate, and mark up screenshots and images — shapes, arrows, text, highlight, blur/redaction, layers, rotation, device-frame mockups, and one-tap export to PNG, JPEG, HEIC, or PDF.</p>
+      </details>
+      <details>
+        <summary>Do I need an account or subscription?</summary>
+        <p>No. MSRX Canvas has no account, no sign-in, and no subscription. Open it and start creating.</p>
+      </details>
+      <details>
+        <summary>How do I export with a transparent background?</summary>
+        <p>Open Export Studio, choose PNG or HEIC, and turn on "Transparent background". JPEG and PDF are always opaque.</p>
+      </details>
+      <details>
+        <summary>How do I rotate a shape?</summary>
+        <p>Select the shape, then drag the round handle above it to rotate freely (hold Shift to snap to 15°). Or use the ±90° / reset buttons in the inspector.</p>
+      </details>
+      <details>
+        <summary>What are device frames?</summary>
+        <p>One-tap mockups that wrap your canvas in a browser, window, terminal, laptop, phone, or tablet frame — perfect for product shots and documentation.</p>
+      </details>
+      <details>
+        <summary>How does AI Assist work? Is it private?</summary>
+        <p>AI Assist is optional and off until you add your own free Groq API key in Settings (⌘,). The key is stored only on your Mac. When you run a task, the current canvas image is sent over HTTPS directly to Groq using your key — MSRX never sees or stores it. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+      </details>
+      <details>
+        <summary>Where do I get a Groq API key?</summary>
+        <p>Create a free key at <a href="https://console.groq.com" target="_blank" rel="noopener">console.groq.com</a>, then paste it into Settings → AI Assist.</p>
+      </details>
+      <details>
+        <summary>Which macOS version is required?</summary>
+        <p>MSRX Canvas requires macOS 14 (Sonoma) or later, and runs natively on Apple Silicon and Intel Macs.</p>
+      </details>
+      <details>
+        <summary>Is my work auto-saved?</summary>
+        <p>Yes. MSRX Canvas keeps an automatic session backup and warns you before discarding unsaved work, so you can recover your last session if the app closes unexpectedly.</p>
+      </details>
+    </div>
+
+    <div class="contact-box">
+      <h3>Need more help?</h3>
+      <p>We're happy to help with any question, bug, or feature request.</p>
+      <a class="email-btn" href="mailto:mrinalsinghraja@gmail.com?subject=MSRX%20Canvas%20Support">Email Support</a>
+      <p class="contact-note">mrinalsinghraja@gmail.com · typical reply within 1–2 days</p>
+    </div>
+  </main>
+  <footer>
+    <span>© 2026 MSRX · Mrinal Singh Raja</span>
+    <div style="display:flex;gap:20px">
+      <a href="index.html">MSRX Canvas</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://msrx.co.in">msrx.co.in</a>
+    </div>
+  </footer>
+</body>
+</html>
