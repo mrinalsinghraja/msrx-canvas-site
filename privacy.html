@@ -60,14 +60,14 @@
     <h2>Your Content Stays on Your Mac</h2>
     <p>Documents and images you edit in MSRX Canvas remain on your Mac unless you explicitly save, export, share, or move them yourself. App preferences and your list of recently opened files are stored locally on your device using macOS UserDefaults and security-scoped bookmarks.</p>
 
-    <h2>Optional AI Assist (Groq)</h2>
-    <p>AI Assist is <strong>off by default</strong> and works only after you add your own Groq API key in Settings. The key is stored only on your Mac and is never sent to MSRX.</p>
-    <p>When — and only when — you explicitly run an AI task, the current canvas image and your Groq API key are sent over HTTPS directly to Groq (groq.com) to generate the requested result. No image or key leaves your Mac at any other time, and MSRX Canvas never stores or transmits this content anywhere else. Groq's handling of that request is governed by <a href="https://groq.com/privacy-policy/" style="color:#8b5cf6;text-decoration:none;">Groq's own privacy policy</a>.</p>
+    <h2>AI Assist</h2>
+    <p>AI Assist is <strong>included</strong> and requires no account or API key. When — and only when — you explicitly run an AI task, the current canvas image is sent over HTTPS to the MSRX AI proxy, which forwards it to Groq (groq.com) to generate the requested result.</p>
+    <p>The image is processed only to fulfill that request: <strong>MSRX does not store, log, or retain it</strong>, and does not use it for any other purpose. The result is returned to your Mac. Groq's handling of the forwarded request is governed by <a href="https://groq.com/privacy-policy/" style="color:#8b5cf6;text-decoration:none;">Groq's own privacy policy</a>.</p>
 
     <h2>Third-Party Services</h2>
     <ul>
       <li><strong>Apple App Store</strong> — for app distribution.</li>
-      <li><strong>Groq</strong> — only when you choose to use AI Assist with your own key, as described above.</li>
+      <li><strong>Groq</strong> — the AI provider your canvas image is forwarded to, only when you run an AI task, as described above.</li>
     </ul>
     <p>MSRX Canvas makes no other network connections and bundles no third-party tracking or analytics SDKs.</p>
 
