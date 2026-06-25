@@ -1,6 +1,6 @@
-# MSRX Canvas — Website
+# MSRX Canvas AI — Website
 
-Public site for **MSRX Canvas**, a premium native macOS app to capture, annotate, and mark up screenshots and images.
+Public site for **MSRX Canvas AI**, a premium native macOS app to capture, annotate, and mark up screenshots and images.
 
 - **Landing:** [index.html](index.html)
 - **Privacy Policy:** [privacy.html](privacy.html)
